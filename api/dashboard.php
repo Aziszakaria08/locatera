@@ -39,7 +39,7 @@
 <body class="bg-splash-gradient min-h-screen flex flex-col font-sans">
 
   <main class="flex-grow flex flex-col items-center justify-center text-center p-8">
-    <img src="./src/asset/logo-locatera.png" alt="Locatera Logo" class="w-3/4 max-w-xs">
+    <img src="/src/asset/logo-locatera.png" alt="Locatera Logo" class="w-3/4 max-w-xs">
     <p class="text-base sm:text-lg md:text-xl text-locatera-dark-gray font-normal">"Satu Titipan Sejuta Cerita Lokal"</p>
   </main>
 

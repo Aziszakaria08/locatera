@@ -1,15 +1,12 @@
 {
   "functions": {
-    "index.php": { "runtime": "vercel-php@0.7.0" },
-    "cart.php": { "runtime": "vercel-php@0.7.0" },
-    "checkout.php": { "runtime": "vercel-php@0.7.0" },
-    "payment.php": { "runtime": "vercel-php@0.7.0" },
-    "success.php": { "runtime": "vercel-php@0.7.0" },
-    "product_detail.php": { "runtime": "vercel-php@0.7.0" },
-    "navbar.php": { "runtime": "vercel-php@0.7.0" },
-    "data.php": { "runtime": "vercel-php@0.7.0" }
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.0"
+    }
   },
   "routes": [
+    { "src": "/", "dest": "/api/index.php" },
+    { "src": "/([^/]+\\.php)$", "dest": "/api/$1" },
     { "src": "/(.*)", "dest": "/$1" }
   ]
 }

@@ -7,7 +7,7 @@ $currentPage = basename($_SERVER['SCRIPT_NAME']);
 <nav class="hidden lg:flex fixed top-0 left-0 right-0 h-20 bg-white shadow-sm z-50 items-center justify-between px-8 max-w-7xl mx-auto w-full transition-all">
     
     <div class="flex items-center gap-2">
-        <img src="./src/asset/logo-locatera.png" alt="Logo" class="w-10 h-10"> 
+        <img src="/src/asset/logo-locatera.png" alt="Logo" class="w-10 h-10"> 
         <div class="flex flex-col">
             <span class="text-2xl font-fontLogo font-extrabold text-locatera-orange tracking-tight">Locatera</span>
             <span class="text-[10px] text-gray-400 mt-1 font-poppins font-medium">Satu Titipan Sejuta Cerita Lokal</span>
@@ -37,7 +37,7 @@ $currentPage = basename($_SERVER['SCRIPT_NAME']);
 
     <div class="flex items-center gap-4">
         <a href="profile.php" class="relative">
-            <img src="./src/asset/profil.jpg" alt="Profile" class="w-10 h-10 rounded-full border border-gray-200">
+            <img src="/src/asset/profil.jpg" alt="Profile" class="w-10 h-10 rounded-full border border-gray-200">
         </a>
     </div>
 </nav>

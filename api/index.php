@@ -68,7 +68,7 @@ $activeFilter = $_GET['filter'] ?? 'All';
       </div>
       <a href="profile.php">
 
-        <img src="./src/asset/profil.jpg" alt="Profil" class="w-12 h-12 rounded-full"> </a>
+        <img src="/src/asset/profil.jpg" alt="Profil" class="w-12 h-12 rounded-full"> </a>
     </header>
 
     <div class="flex gap-2 mb-4">
