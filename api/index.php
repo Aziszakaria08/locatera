@@ -1,6 +1,6 @@
 <?php
+session_start();
 include 'data.php';
-
 /*
 |--------------------------------------------------------------------------
 | LOGIKA FILTER
@@ -62,7 +62,7 @@ $activeFilter = $_GET['filter'] ?? 'All';
   <main class="w-full max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 pb-24 lg:pb-8">
 
     <header class="flex justify-between items-center mb-4">
-      <div>
+      <div class="lg:hidden">
         <h1 class="text-3xl font-extrabold text-locatera-dark font-fontLogo">Locatera</h1>
         <p class="text-xs text-locatera-light-gray mt-1 font-poppins">"Satu Titipan Sejuta Cerita Lokal"</p>
       </div>

@@ -93,12 +93,12 @@ $defaultVariant = $product['variants'][0] ?? 'Default';
       </div>
 
       <div class="fixed bottom-0 left-0 right-0 p-4 bg-white shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] flex gap-4 z-30 md:static md:shadow-none md:p-0">
-        <button onclick="window.location.href='cart.php'" class="bg-orange-100 text-locatera-orange p-4 rounded-xl hover:bg-orange-200 transition shadow-md">
+        <button onclick="openModalForCart()" class="bg-orange-100 text-locatera-orange p-4 rounded-xl hover:bg-orange-200 transition shadow-md">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
           </svg>
         </button>
-        <button onclick="openModal()" class="flex-grow bg-locatera-orange text-white font-bold text-lg rounded-xl shadow-lg hover:bg-orange-600 transition uppercase tracking-wide">
+        <button onclick="openModalForCheckout()" class="flex-grow bg-locatera-orange text-white font-bold text-lg rounded-xl shadow-lg hover:bg-orange-600 transition uppercase tracking-wide">
           Order Now
         </button>
       </div>
@@ -109,7 +109,7 @@ $defaultVariant = $product['variants'][0] ?? 'Default';
 
   <div id="orderModal" class="fixed bottom-0 left-0 right-0 bg-white z-50 rounded-t-[2rem] transform translate-y-full transition-transform duration-300 ease-out shadow-2xl max-w-md mx-auto md:max-w-2xl">
 
-    <form action="checkout.php" method="POST" class="p-6">
+    <form action="checkout.php" id="orderForm" method="POST" class="p-6">
 
       <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
       <input type="hidden" name="product_name" value="<?php echo $product['name']; ?>">
@@ -171,6 +171,16 @@ $defaultVariant = $product['variants'][0] ?? 'Default';
     const overlay = document.getElementById('modalOverlay');
     const inputVariant = document.getElementById('inputVariant');
     const inputQty = document.getElementById('inputQty');
+
+    function openModalForCheckout() {
+      document.getElementById('orderForm').action = 'checkout.php';
+      openModal();
+    }
+
+    function openModalForCart() {
+      document.getElementById('orderForm').action = 'cart.php';
+      openModal();
+    }
 
     // Fungsi Buka Modal
     function openModal() {
