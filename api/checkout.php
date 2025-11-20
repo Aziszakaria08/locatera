@@ -104,12 +104,12 @@ $subtotal = $productPrice * $qty;
 
         <div class="group lg:col-span-2">
           <label class="block text-xs text-gray-400 mb-1">Nama Lengkap</label>
-          <input type="text" name="fullname" value="" placeholder="Ayu Lestari" class="w-full border-b border-gray-200 py-2 text-locatera-dark font-medium focus:outline-none focus:border-locatera-orange transition-colors" required>
+          <input type="text" name="fullname" value="" class="w-full border-b border-gray-200 py-2 text-locatera-dark font-medium focus:outline-none focus:border-locatera-orange transition-colors" required>
         </div>
 
         <div class="lg:col-span-2">
           <label class="block text-xs text-gray-400 mb-1">Alamat</label>
-          <input type="text" name="address" value="" placeholder="Jl. Lebak Bulus II NO.15, Cilandak" class="w-full border-b border-gray-200 py-2 text-locatera-dark font-medium text-sm truncate focus:outline-none focus:border-locatera-orange transition-colors" required>
+          <input type="text" name="address" value="" class="w-full border-b border-gray-200 py-2 text-locatera-dark font-medium text-sm truncate focus:outline-none focus:border-locatera-orange transition-colors" required>
         </div>
 
         <div class="relative">
@@ -146,12 +146,12 @@ $subtotal = $productPrice * $qty;
 
         <div>
           <label class="block text-xs text-gray-400 mb-1">Pos Kode</label>
-          <input type="text" name="zipcode" value="" placeholder="12430" class="w-full border-b border-gray-200 py-2 text-locatera-dark font-medium focus:outline-none focus:border-locatera-orange transition-colors">
+          <input type="text" name="zipcode" value="" class="w-full border-b border-gray-200 py-2 text-locatera-dark font-medium focus:outline-none focus:border-locatera-orange transition-colors">
         </div>
 
         <div>
           <label class="block text-xs text-gray-400 mb-1">Nomor Telepon</label>
-          <input type="tel" name="phone" value="" placeholder="085xxxxxxxxx" class="w-full border-b border-gray-200 py-2 text-locatera-dark font-medium focus:outline-none focus:border-locatera-orange transition-colors" required>
+          <input type="tel" name="phone" value="" class="w-full border-b border-gray-200 py-2 text-locatera-dark font-medium focus:outline-none focus:border-locatera-orange transition-colors" required>
         </div>
 
         <div class="relative">
