@@ -115,7 +115,8 @@ $subtotal = $productPrice * $qty;
         <div class="relative">
           <label class="block text-xs text-gray-400 mb-1">Provinsi</label>
           <select name="province" class="w-full appearance-none bg-transparent border-b border-gray-200 py-2 text-locatera-dark font-medium text-sm focus:outline-none focus:border-locatera-orange">
-            <option value="DKI Jakarta" selected>DKI Jakarta</option>
+            <option value="" selected></option>
+            <option value="DKI Jakarta">DKI Jakarta</option>
             <option value="Jawa Barat">Jawa Barat</option>
             <option value="Jawa Tengah">Jawa Tengah</option>
             <option value="Jawa Timur">Jawa Timur</option>
